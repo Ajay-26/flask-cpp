@@ -1,0 +1,16 @@
+#ifndef HTTP_SVR_HDR 
+#define HTTP_SVR_HDR
+
+class HTTP_Server{
+public:
+    HTTP_Server(char *ip_addr, char* port);
+    void start_server();
+
+private:
+    char* port;
+    char* ip_addr;
+    int buffer_size;
+    int backlog;
+};
+
+#endif //HTTP_SVR_HDR
